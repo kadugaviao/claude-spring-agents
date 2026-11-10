@@ -4,14 +4,15 @@ Kit de customização do Claude Code para projetos Spring Boot: uma skill (`spri
 
 ```
 ai_agent_springboot/
-└── spring-claude-kit/
-    ├── claude/            → copiado para ~/.claude/ pelo install.sh
-    │   ├── skills/spring-boot/   SKILL.md, testing.md, persistence.md
-    │   ├── agents/               os 4 subagentes
-    │   └── hooks/                guard-paths.py, bash-allowlist.py
-    ├── templates/CLAUDE.md       modelo de CLAUDE.md por projeto
-    ├── install.sh
-    └── README.md                 documentação completa
+├── spring-claude-kit/
+│   ├── claude/            → copiado para ~/.claude/ pelo install.sh
+│   │   ├── skills/spring-boot/   SKILL.md, testing.md, persistence.md
+│   │   ├── agents/               os 4 subagentes
+│   │   └── hooks/                guard-paths.py, bash-allowlist.py
+│   ├── templates/CLAUDE.md       modelo de CLAUDE.md por projeto
+│   ├── install.sh
+│   └── README.md                 documentação completa
+└── tests/hooktest.py             suíte dos hooks: python3 tests/hooktest.py
 ```
 
 ## Instalar

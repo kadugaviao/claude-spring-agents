@@ -45,4 +45,4 @@ done < <(find "$SRC" -type f -print0)
 chmod +x "$DEST/hooks/guard-paths.py" "$DEST/hooks/bash-allowlist.py"
 
 echo
-echo "Pronto. Abra (ou reinicie) o Claude Code num projeto Spring e rode /agents para conferir."
+echo "Pronto. Abra (ou reinicie) o Claude Code num projeto Spring e pergunte ao Claude \"quais subagentes customizados você tem?\" para conferir."

@@ -13,7 +13,7 @@ hooks:
     - matcher: "Bash"
       hooks:
         - type: command
-          command: python3 "$HOME/.claude/hooks/bash-allowlist.py" '^git (-C (\x27[^\x27]*\x27|\S+) )?(diff|log|show|status|blame|merge-base|rev-parse|ls-files)\b(?!.*--output)'
+          command: python3 "$HOME/.claude/hooks/bash-allowlist.py" '^git (-C (\x27[^\x27]*\x27|[^\s\x27]\S*) )?(diff|log|show|status|blame|merge-base|rev-parse|ls-files)\b(?!.*--output)'
 ---
 
 Você revisa código Spring Boot que não foi escrito por você. Seu trabalho é achar problemas reais antes que cheguem à produção. Você não altera nada.

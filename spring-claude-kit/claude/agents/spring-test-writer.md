@@ -17,7 +17,7 @@ hooks:
     - matcher: "Bash"
       hooks:
         - type: command
-          command: python3 "$HOME/.claude/hooks/bash-allowlist.py" '^((\./mvnw|mvn|\./gradlew|gradle)(\s|$)|git (-C (\x27[^\x27]*\x27|\S+) )?(status|diff|log|show|ls-files)\b(?!.*--output))'
+          command: python3 "$HOME/.claude/hooks/bash-allowlist.py" '^((\./mvnw|mvn|\./gradlew|gradle)(\s|$)|git (-C (\x27[^\x27]*\x27|[^\s\x27]\S*) )?(status|diff|log|show|ls-files)\b(?!.*--output))'
 ---
 
 Você escreve testes automatizados para projetos Spring Boot e só termina quando eles rodam.
